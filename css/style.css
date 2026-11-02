@@ -465,7 +465,7 @@ svg {
     background-image: url(../img/bg-03.jpg);
 }
 
-#events{
+#adpeople{
     background-image: url(../img/bg-04.jpg);
 }
 
@@ -476,7 +476,7 @@ svg {
     background-image: url(../img/bg-06.jpg);
 }
 
-#peles h2, #judges h2, #events h2, #years h2, #date h2 {
+#peles h2, #judges h2, #adpeople h2, #years h2, #date h2 {
     font-family: var(--bs-font-sans-serif);
     font-weight: 700;
     font-style: normal;
@@ -486,19 +486,19 @@ svg {
 }
 
 @media (min-width: 768px) {
-    #peles h2, #judges h2, #events h2, #years h2, #date h2 {
+    #peles h2, #judges h2, #adpeople h2, #years h2, #date h2 {
         font-size: clamp(4rem, 10vw, 2rem);
         text-transform: uppercase;
     }
 }
 
-#judges h4, #judges h5, #events h4, #events h5 {
+#judges h4, #judges h5, #adpeople h4, #adpeople h5 {
     font-family: var(--bs-body-font);
 }
-#events h4 a{
+#adpeople h4 a{
     color: var(--white);
 }
-#events h5 {
+#adpeople h5 {
     padding-top: 1em;
 }
 
@@ -507,14 +507,14 @@ svg {
     font-style: normal;
 }
 
-#judges h5, #events h5{
+#judges h5, #adpeople h5{
     text-transform: uppercase;
 }
-#judges h4,#events h4{
+#judges h4,#adpeople h4{
     font-size: 1.2em;
 }
 
-#judges h5,#events h5{
+#judges h5,#adpeople h5{
     font-size: .8em;
 }
 
