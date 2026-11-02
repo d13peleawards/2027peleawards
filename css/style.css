@@ -518,16 +518,16 @@ svg {
     font-size: .8em;
 }
 
-#nominate, #eventswinners {
+#nominate, #adpeoplewinners {
     background-color: var(--yellow);
 }
-#nominate h3, #eventswinners h3 {
+#nominate h3, #adpeoplewinners h3 {
     font-size: clamp(2rem, 10vw, 2rem);
     text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-    #nominate h3, #eventswinners h3 {
+    #nominate h3, #adpeoplewinners h3 {
         font-size: clamp(4rem, 10vw, 2rem);
         text-transform: uppercase;
         color: var(--black);
