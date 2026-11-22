@@ -5,11 +5,11 @@
     animation-timing-function: linear;
     opacity: 0;
   }
-  24.45% {
+  33.72% {
     animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
     opacity: 0;
   }
-  24.8% {
+  34.07% {
     animation-timing-function: linear;
     opacity: 1;
   }
@@ -29,11 +29,11 @@
     animation-timing-function: linear;
     opacity: 0;
   }
-  24.45% {
+  16.44% {
     animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
     opacity: 0;
   }
-  24.8% {
+  16.79% {
     animation-timing-function: linear;
     opacity: 1;
   }
@@ -53,11 +53,11 @@
     animation-timing-function: linear;
     opacity: 0;
   }
-  24.45% {
+  16.44% {
     animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
     opacity: 0;
   }
-  24.8% {
+  16.79% {
     animation-timing-function: linear;
     opacity: 1;
   }
@@ -73,7 +73,7 @@
   animation: kf_top_line_opacity_0 2s linear infinite;
 }
 </style>
-<g id="megaphone" clip-path="url(#clip0_32_227)">
+<g id="megaphone-animated" clip-path="url(#clip0_54_255)">
 <g id="Group" transform="translate(203.013 118.656)">
 <path id="Vector" d="M211.974 123.6L181.383 123.291L181.692 93.009L151.41 92.7L120.819 92.391L121.128 62.109L90.537 61.8L90.846 31.209L60.564 30.9V0H0V30.9V61.182V91.773V122.055V152.646V182.928V213.519V243.801V274.392V304.674V335.265V365.547L27.501 365.856V365.547L57.783 365.856L58.092 335.574H88.374L88.683 305.292L119.274 305.601V275.01L149.865 275.319L180.147 275.628L180.456 245.037L211.047 245.346L241.329 245.655L241.638 215.064L241.947 184.782L242.256 154.191V123.909L211.974 123.6Z" fill="#EFE9E8"/>
 <path id="Vector_2" transform="translate(333.761 185.647) rotate(-89.5)" d="M30.591 0H0V30.591H30.591V0Z" fill="#CE5F9C"/>
@@ -83,13 +83,13 @@
 <path id="Vector_6" transform="translate(271.611 123.909)" d="M92.391 31.209L92.082 61.8L91.773 92.082H61.491V61.491L61.8 31.209H92.391L92.7 0.927009L62.109 0.617991L31.518 0.308995L1.23598 0L0.926962 30.591L0.617991 61.182V91.464L0.308972 122.055L0 152.337L30.591 152.646L60.873 152.955H91.464V122.673L122.055 122.982L122.364 92.391V62.109L122.673 31.518L92.391 31.209Z" fill="#D1036B"/>
 </g>
 <g id="Group_2" transform="translate(18.849 88.374)">
-<path id="middle_line" transform="translate(6.81877e-07 181.074)" d="M60.873 0.618014L30.591 0.309019L0 0V30.591L30.282 30.9H60.873L91.155 31.209L121.746 31.518V0.927009H91.464L60.873 0.618014Z" fill="#D1036B"/>
-<g id="bottom_line" transform="translate(29.1404 304.399)">
+<path id="middle_line" opacity="0" transform="translate(6.81877e-07 181.074)" d="M60.873 0.618014L30.591 0.309019L0 0V30.591L30.282 30.9H60.873L91.155 31.209L121.746 31.518V0.927009H91.464L60.873 0.618014Z" fill="#D1036B"/>
+<g id="bottom_line" opacity="0.273963" transform="translate(29.1404 304.399)">
 <path id="Vector_7" transform="translate(-3.05176e-05 90.4386) rotate(-89.5)" d="M30.591 0H0V30.591H30.591V0Z" fill="#D1036B"/>
 <path id="Vector_8" transform="translate(30.5475 60.2051) rotate(-89.5)" d="M30.591 0H0V30.282H30.591V0Z" fill="#D1036B"/>
 <path id="Vector_9" transform="translate(61.1003 30.2809) rotate(-89.5)" d="M30.282 0H0V30.591H30.282V0Z" fill="#D1036B"/>
 </g>
-<g id="top_line" transform="translate(31.6466 29.4583)">
+<g id="top_line" opacity="0.273963" transform="translate(31.6466 29.4583)">
 <path id="Vector_10" transform="translate(30.2335 61.1424) rotate(-89.5)" d="M30.591 0H0V30.282H30.591V0Z" fill="#D1036B"/>
 <path id="Vector_11" transform="translate(60.4697 91.6927) rotate(-89.5)" d="M30.591 0H0V30.591H30.591V0Z" fill="#D1036B"/>
 <path id="Vector_12" transform="translate(3.05176e-05 30.2809) rotate(-89.5)" d="M30.282 0H0V30.591H30.282V0Z" fill="#D1036B"/>
@@ -107,7 +107,7 @@
 </g>
 </g>
 <defs>
-<clipPath id="clip0_32_227">
+<clipPath id="clip0_54_255">
 <rect width="618" height="618" fill="white"/>
 </clipPath>
 </defs>
