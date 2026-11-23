@@ -670,3 +670,7 @@ footer {
     rotate: -3deg;
   }
 }
+
+.p-sides {
+    padding: 1em;
+}
