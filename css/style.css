@@ -27,6 +27,105 @@ Bootstrap Variables Override
 /********************************
 Global Styles and UI Components
 **********************************/
+
+.site-header {
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site-header a {
+    color: var(--green);
+    text-decoration: none; }
+  .site-header h1 {
+    font-size: 1.5em;
+    margin: 0; }
+  .site-header .site-id {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .site-header .logo {
+    width: 150px;
+    margin-right: .5em; }
+
+ /* SITE-HEADER SITE-NAV */
+.site-header .site-nav .menu-button {
+  position: absolute;
+  top: .75em;
+  right: .75em;
+  color: #333;
+  margin: 0;
+  padding: 12px 12px 0 12px;
+  font-size: inherit;
+  line-height: 1;
+  z-index: 20;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; }
+  .site-header .site-nav .menu-button svg {
+    fill: #D8A145; }
+    .site-header .site-nav .menu-button svg rect {
+      transition: .3s all ease-out; }
+
+.site-header .site-nav ul {
+  margin: 0;
+  padding: 0 2em;
+  list-style: none;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+  transform: translate(100%, 0);
+  transition: .3s all ease-out;
+  z-index: 1; }
+
+.site-header .site-nav li {
+  font-size: clamp(1em, 1vw, 2vw);
+  transform: translate(10%, 0);
+  transition: .3s all ease-out .3s;
+  opacity: 0; }
+
+.site-header .site-nav #menubar-top,
+.site-header .site-nav #menubar-middle,
+.site-header .site-nav #menubar-bottom {
+  transform-origin: center; }
+
+.site-header .site-nav[data-navstate="open"] .menu-button {
+  position: fixed; }
+
+.site-header .site-nav[data-navstate="open"] #menubar-top {
+  transform: translate(7px, 7px) rotate(-45deg); }
+
+.site-header .site-nav[data-navstate="open"] #menubar-middle {
+  opacity: 0; }
+
+.site-header .site-nav[data-navstate="open"] #menubar-bottom {
+  transform: translate(0px, -4px) rotate(45deg); }
+
+.site-header .site-nav[data-navstate="open"] ul {
+  transform: translate(0, 0); }
+
+.site-header .site-nav[data-navstate="open"] li {
+  transform: translate(0, 0);
+  opacity: 1; }
+    
+
+.hide-visually {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
 .navbar {
 
     /* Optional: Stretch the navbar across the full width */
@@ -385,8 +484,8 @@ svg {
 /********************************
 *********** ACCORDIAN ************
 **********************************/
-.accordian-list {
-  /* background: #fff; */
+/* .accordian-list {
+  background: #fff;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   list-style: none;
@@ -402,9 +501,9 @@ svg {
 }
 .accordian-item:not(:last-child) {
   border-bottom: 1px solid #e3e3e3;
-}
+} */
 
-.accordian-title:after {
+summary:after {
   /* border-left: 8px solid transparent;
   border-right: 8px solid transparent; */
   border-bottom: 8px solid var(--yellow);
@@ -420,7 +519,7 @@ svg {
   transition: 0.3s ease transform;
   width: 0;
 }
-.accordian-checkbox:checked + .accordian-title:after {
+.accordian-checkbox:checked + summary:after {
   transform: rotate(180deg);
 }
 
@@ -442,12 +541,16 @@ svg {
   transform: translate(0, 50%);
 }
 
-.accordian-title,
+summary h6 {
+      color: var(--yellow);
+}
+
+summary,
 .accordian-description {
   padding-right: 40px;
 }
 
-.accordian-title {
+summary {
   color: var(--yellow);
   margin: 0 0 8px;
   position: relative;
@@ -545,6 +648,33 @@ svg {
     /* padding-left: 5em; */
     display: block;
     margin-left: auto;
+}
+@media (max-width: 1400px) {
+    .tilt {
+    scale: .9;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tilt {
+    scale: .7;
+    }
+}
+
+@media (max-width: 960px) {
+    .tilt {
+    scale: .6;
+    /* transform: rotate(0); */
+    }
+}
+
+@media (max-width: 767px) {
+    .tilt {
+    transform: rotate(0);
+    }
+    .one-half:has(.tilt) {
+        margin: 0;
+    }
 }
 
 #date {
@@ -673,4 +803,201 @@ footer {
 
 .p-sides {
     padding: 1em;
+}
+
+
+@media (max-width: 767px) {
+.hide-mobile {
+    position: absolute;
+  top: -9999px;
+  left: -9999px;
+}}
+
+#events{
+    background-image: url(../img/bg-04.jpg);
+}
+
+#events h2{
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+    font-size: clamp(2rem, 10vw, 2rem);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    #events h2 {
+        font-size: clamp(4rem, 10vw, 2rem);
+        text-transform: uppercase;
+    }
+}
+
+#events h4, #events h5 {
+    font-family: var(--bs-body-font);
+}
+#events h4 a{
+    color: var(--white);
+}
+#events h5 {
+    padding-top: 1em;
+}
+
+#events h3, #events h5 {
+    font-size: clamp(4rem, 10vw, 2rem);
+    padding-bottom: .5em;
+}
+
+#events h5{
+    text-transform: uppercase;
+}
+
+#events h4{
+    font-size: 1.2em;
+}
+
+#events h5{
+    font-size: .8em;
+}
+
+
+.pele-accordion {
+  interpolate-size: allow-keywords;
+}
+
+.pele-accordion details {
+    margin-top: 1em;
+    /* padding: 1em 0 .5em 0; */
+    border-top: 3px dashed var(--magenta);
+    border-bottom: 3px dashed var(--magenta);
+}
+
+.pele-accordion details+details {
+    border-top-width: 0px;
+}
+
+.pele-accordion details::details-content {
+  display: block;
+  block-size: 0;
+  transition-property: block-size, content-visibility;
+  transition-behavior: allow-discrete;
+  transition-timing-function: ease-out;
+
+  /*  SET THE DURATION FOR THE CLOSING ANIMATION  */
+  transition-duration: 0.2s;
+}
+
+.pele-accordion details[open]::details-content {
+  block-size: auto;
+
+  /*  SET THE DURATION FOR THE OPENING ANIMATION  */
+  transition-duration: 0.4s;
+}
+
+/* REMOVE TOP MARGIN OF THE CONTENT TO FIX THE JUMP */
+.pele-accordion details .details-content {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.pele-accordion summary {
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    padding: 1em 3em 1em 0;
+    position: relative;
+}
+
+.pele-accordion summary:focus {
+    /* KEEP DEFAULT */
+}
+
+.pele-accordion details *:not(summary) {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.pele-accordion summary::-moz-list-bullet {
+    list-style-type: none;
+    display: block;
+}
+
+.pele-accordion summary::marker,
+.pele-accordion summary::-webkit-details-marker {
+    color: red;
+}
+
+.pele-accordion summary::before {
+
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    /* bottom: 0; */
+    line-height: 1;
+    text-align: center;
+    width: 1em;
+
+    /* position: absolute;
+    right: 1.5em;
+    transition: all 0.2s ease-out;
+
+    Arrow Version
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 1.4em;
+    transform: rotate(45deg) translate(-4px, -4px); */
+
+    /* Plus Minus Version   */
+    /*   content: "+"; */
+}
+
+.pele-accordion details[open] summary {
+    background-color: rgba(0, 0, 0, 0.02);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.pele-accordion details[open] summary::before {
+    /* Arrow Version   */
+    transform: rotate(225deg);
+
+    /* Plus / Minus Version    */
+    /* content: "|"; */
+    /* transform: rotate(-90deg); */
+}
+
+/* OPTIONAL LINE IF NO CONTRASTING BG COLOR FOR SUMMARY */
+/* .pele-accordion details[open] summary::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1  );
+} */
+
+.pele-accordion summary:hover,
+.pele-accordion summary:focus,
+.pele-accordion details[open] summary:focus {
+    /* KEEP DEFAULTS */
+}
+
+/* SUMMARY HOVER STATE */
+.pele-accordion summary:hover,
+.pele-accordion details[open] summary:hover {
+    /* background-color: rgba(0, 51, 153, 1); */
+    background-color: var(--nma-accordion-bgcolor);
+    color: white;
+}
+
+/* TEMP FIX FOR SELECTION COLOR */
+.pele-accordion details *::selection {
+    background-color: transparent;
 }

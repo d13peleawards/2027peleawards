@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <!-- REQUIRED: Your Custom CSS-->
-        <link rel="stylesheet" href="css/style.css?v=0.2">
+        <link rel="stylesheet" href="css/style.css?v=0.3">
 
         <!-- REQUIRED: ADOBE Font API -->
         <link rel="stylesheet" href="https://use.typekit.net/aeq7nwu.css">
@@ -24,28 +24,32 @@
     <body>
         <!-- Content will go here -->
         <!-- Start of Header Section -->
-        <header class="py-3">
-            <nav class="navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a href="index.html">
-                    <img src="img/2027-pele-logo.svg" alt="2027 Pele Awards Logo" width="144" height="43">
-                </a>
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Menu Links -->
-                        <li class="nav-item"><a class="nav-link" href="#winner">2026 Winners</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#judges">Judges</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nominate">Nominate</a></li <li class="nav-item"><a class="nav-link" href="#adpeople">Ad People</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://d13peleawards.github.io/2027peleawards-highschool/">Highschool</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-link" href="https://enter.americanadvertisingawards.com/a/Organizations/13-HAW/Home" role="button">Enter</a></li>
-
-                    </ul>
+        <header class="site-header">
+            <div class="site-id">
+                <div class="logo">
+                    <a href="index.html"><img src="img/2027-pele-logo2.svg" alt="2027 Pele Awards Logo" width="150" height="150"></a>
                 </div>
+                <h1 class="hide-visually"><a href="index.html">Pele Awards Guidebook</a></h1>
+            </div>
+            <nav class="site-nav" data-navstate="closed">
+                <button class="menu-button">
+                    <span class="hide-visually">Menu</span>
+                    <svg width="30" height="30">
+                        <title>Menu</title>
+                        <rect id="menubar-top" y="0" width="30" height="3"></rect>
+                        <rect id="menubar-middle" y="8" width="30" height="3"></rect>
+                        <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
+                    </svg>
+                </button>
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="https://winners.peleawards.com/winners/2026">2026 Winners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#judges">Judges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nominate">Nominate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adpeople">Ad People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/2027-highschool.html">Highschool</a></li>
+                    <li class="nav-item"><a class="btn btn-primary nav-link" href="https://enter.americanadvertisingawards.com/a/Organizations/13-HAW/Home" role="button">Enter</a></li>
+                </ul>
             </nav>
         </header>
         <!-- End of Header Section -->
@@ -112,7 +116,32 @@
                         <h4>ACD/Writer, RPA</h4>
                         <h5>Santa Monica</h5>
                         <h6><a href="rpa.com">rpa.com</a></h6>
-                        <ul class="accordian-list">
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description">Tim Morrison doesn&apos;t know how to write a bio about himself. He also doesn&apos;t like writing in the third person. And yet, here he is, doing his darndest at both.</p>
+
+                                    <p>Tim is an Associate Creative Director and Copywriter at RPA Advertising in Santa Monica, where he&apos;s had the pleasure of working on big, iconic brands like Acura, La-Z-Boy, Cedars&hyphen;Sinai, Apartments.com, Farmers Insurance and ampm, among others. He&apos;s also worked across pretty much every vertical on brands like KFC, DoorDash, LG, Fujifilm, Manulife, and most notably, Dairy Farmers of Canada.</p>
+
+                                    <p>His work has been included in a marketing textbook. A spot he wrote inspired a political cartoon. Don Draper read and creatively directed his words. He&apos;s been to Cannes as a Young Lion. And he&apos;s also surprisingly&nbsp;humble.</p>
+
+                                    <p>Tim is originally from Canada but now lives on a mountain in Southern California. He worries about soil erosion as much as he does about clients eroding the ideas in his work.</p>
+
+                                    <p>You can see what he&apos;s done at <a href="timmorrison.work">timmorrison.work</a></p>
+                                </div>
+                            </details>
+                        </div>
+                        <!-- <div class="pele-accordian">
+                            <details>
+                                <summary>
+                                    <h6>Read More</h6>
+                                </summary>
+                                <div class="details-content">
+
+                                </div>
+                            </details>
+                            <ul class="accordian-list">
                             <li class="accordian-item">
                                 <input type="checkbox" class="accordian-checkbox" checked>
                                 <h6 class="accordian-title">Read More</h6>
@@ -127,8 +156,8 @@
                                 <p>You can see what he&apos;s done at <a href="timmorrison.work">timmorrison.work</a></p>
                             </li>
                         </ul>
-                    </div>
-                    <!-- <div class="one-third">
+                        </div> -->
+                        <!-- <div class="one-third">
                         <img src="img/placeholder2000x1500.jpg" alt="">
                         <h3 class="caps">Judge Name</h3>
                         <h4>Title</h4>
@@ -156,8 +185,8 @@
                             </li>
                         </ul>
                     </div> -->
-                </div>
-                <!-- <div class="row">
+                    </div>
+                    <!-- <div class="row">
                     <div class="one-third">
                         <img src="img/placeholder2000x1500.jpg" alt="">
                         <h3 class="caps">Judge Name</h3>
@@ -201,7 +230,7 @@
                         </ul>
                     </div>
                 </div> -->
-            </div>
+                </div>
         </section>
         <!-- End of Judges -->
 
@@ -217,7 +246,7 @@
                         <p class="text-centered">2027 nomination deadline to be announced</p>
                     </div>
                     <div class="one-fourth">
-                        <img src="img/megaphone-animated2.svg" alt="megaphone" class="img-hor">
+                        <img src="img/megaphone-animated2.svg" alt="megaphone" class="img-hor hide-mobile">
                     </div>
                 </div>
                 <div class="row">
@@ -255,13 +284,13 @@
                         <h3 class="caps">Cale Guillermo</h3>
                         <h4>Agency Marketing Project Specialist</h4>
                         <h4><a href="https://winners.peleawards.com/agency/atlas-insurance-agency-recF5vfvlhRdZZu3R">Atlas Insurance Agency</a></h4>
-                        <ul class="accordian-list">
-                            <li class="accordian-item">
-                                <input type="checkbox" class="accordian-checkbox" checked>
-                                <h6 class="accordian-title">Read More</h6>
-                                <p class="accordian-description">Cale Guillermo has served as President of Ad 2 Hawai&#699;i since June 2023, leading the organization through significant growth in membership and programming. He is a Career &amp; Technical Education graduate from &#699;Aiea High School and earned a degree in Television Production from Leeward Community College before graduating from the University of Hawai&#699;i at M&#257;noa Shidler College of Business with majors in Marketing, Management, Entrepreneurship, and International Business. Professionally, he is an in-house marketer at Atlas Insurance Agency, the largest insurance agency in Hawai&#699;i, recently acquired by Marsh, a Fortune 500 company, and owner of KALE!, a comedic parody art brand.</p>
-                            </li>
-                        </ul>
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description" Cale Guillermo has served as President of Ad 2 Hawai&#699;i since June 2023, leading the organization through significant growth in membership and programming. He is a Career &amp; Technical Education graduate from &#699;Aiea High School and earned a degree in Television Production from Leeward Community College before graduating from the University of Hawai&#699;i at M&#257;noa Shidler College of Business with majors in Marketing, Management, Entrepreneurship, and International Business. Professionally, he is an in-house marketer at Atlas Insurance Agency, the largest insurance agency in Hawai&#699;i, recently acquired by Marsh, a Fortune 500 company, and owner of KALE!, a comedic parody art brand.</p>
+                            </details>
+                        </div>
                     </div>
                     <div class="one-third">
                         <img src="img/adPEOPLE-lincoln.png" alt="lincoln jacobe" width="930" height="1059">
@@ -269,14 +298,14 @@
                         <h3 class="caps">Lincoln Jacobe</h3>
                         <h4>CEO</h4>
                         <h4><a href="https://winners.peleawards.com/agency/6-pillars-marketing-recyw0zRlYc9TVUjH" target="_blank" rel="noopener noreferrer">6 Pillars Marketing</a></h4>
-                        <ul class="accordian-list">
-                            <li class="accordian-item">
-                                <input type="checkbox" class="accordian-checkbox" checked>
-                                <h6 class="accordian-title">Read More</h6>
-                                <p class="accordian-description">Lincoln Jacobe is the CEO of 6 Pillars Marketing, where he excels in strategic development, creative strategy, public relations, and brand experience. A high-impact strategist for the world&apos;s most iconic brands, Lincoln leads global initiatives for Fortune 500 powerhouses including LVMH, Procter &amp; Gamble, Anheuser-Busch, and Dave &amp; Buster&apos;s, and more.</p>
-                                <p>Lincoln is a prominent member of the Forbes Business Council, recently recognized with an Editor&apos;s Choice distinction for his business insights. By blending the &ldquo;Aloha Spirit&rdquo; with world-class brand strategy, Lincoln remains a pivotal figure in Hawai&#699;i&apos;s business and philanthropic landscape, and was inducted into the Business Hall of Fame by the Junior Achievement of Hawai&#699;i.</p>
-                            </li>
-                        </ul>
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description" Lincoln Jacobe is the CEO of 6 Pillars Marketing, where he excels in strategic development, creative strategy, public relations, and brand experience. A high-impact strategist for the world&apos;s most iconic brands, Lincoln leads global initiatives for Fortune 500 powerhouses including LVMH, Procter &amp; Gamble, Anheuser-Busch, and Dave &amp; Buster&apos;s, and more.</p>
+                                    <p>Lincoln is a prominent member of the Forbes Business Council, recently recognized with an Editor&apos;s Choice distinction for his business insights. By blending the &ldquo;Aloha Spirit&rdquo; with world-class brand strategy, Lincoln remains a pivotal figure in Hawai&#699;i&apos;s business and philanthropic landscape, and was inducted into the Business Hall of Fame by the Junior Achievement of Hawai&#699;i.</p>
+                            </details>
+                        </div>
                     </div>
                     <div class="one-third">
                         <img src="img/adPEOPLE-mei-jeanne.png" alt="mei-jeanne wagner" width="930" height="1059">
@@ -284,21 +313,21 @@
                         <h3 class="caps">Mei-Jeanne Wagner</h3>
                         <h4>Senior VP</h4>
                         <h4><a href="https://winners.peleawards.com/agency/anthology-finn-partners-reciOabPvjPCyxXz0" target="_blank" rel="noopener noreferrer">Anthology Finn Partners</a></h4>
-                        <ul class="accordian-list">
-                            <li class="accordian-item">
-                                <input type="checkbox" class="accordian-checkbox" checked>
-                                <h6 class="accordian-title">Read More</h6>
-                                <p class="accordian-description">Mei Jeanne brings a unique blend of public relations, marketing, issue advocacy, and event planning to Anthology. She leverages extensive experience with local and national clients and partners to advance their objectives through holistic, strategic communications. With keen insight into Hawai&#699;i&apos;s multicultural community, she plays a pivotal role in developing award-winning identity programs and initiatives.
-                                </p>
-                                <p>Her deep ties to the Native Hawaiian community, combined with her strategic leadership and collaborative approach, ensure work is grounded in cultural understanding and local mana&#699;o, earning industry recognition including AAF Pele Golds, AMA Marketer of the Year, and PRSA Koa Anvils.</p>
-
-                            </li>
-                        </ul>
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description">Mei Jeanne brings a unique blend of public relations, marketing, issue advocacy, and event planning to Anthology. She leverages extensive experience with local and national clients and partners to advance their objectives through holistic, strategic communications. With keen insight into Hawai&#699;i&apos;s multicultural community, she plays a pivotal role in developing award-winning identity programs and initiatives.
+                                    </p>
+                                    <p>Her deep ties to the Native Hawaiian community, combined with her strategic leadership and collaborative approach, ensure work is grounded in cultural understanding and local mana&#699;o, earning industry recognition including AAF Pele Golds, AMA Marketer of the Year, and PRSA Koa Anvils.</p>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="one-third">
-                        <img src="img/shaveice-animated.svg" alt="shave ice" class="tilt">
+                        <img src="img/shaveice-animated.svg" alt="shave ice" class="tilt hide-mobile">
                     </div>
                     <div class="one-third">
                         <img src="img/adPEOPLE-jean-paul.png" alt="jean-paul gedeon" width="930" height="1059">
@@ -306,23 +335,24 @@
                         <h3 class="caps">Jean-Paul Gedeon</h3>
                         <h4>CEO</h4>
                         <h4><a href="https://winners.peleawards.com/agency/jpg-media-recdtcKpJKriNw5hA" target="_blank" rel="noopener noreferrer">JPG Media</a></h4>
-                        <ul class="accordian-list">
-                            <li class="accordian-item">
-                                <input type="checkbox" class="accordian-checkbox" checked>
-                                <h6 class="accordian-title">Read More</h6>
-                                <p class="accordian-description">Jean&hyphen;Paul Gedeon is a lifelong entrepreneur, born and raised in Hawai&#699;i, with over two decades of experience building businesses.</p>
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description" Jean&hyphen;Paul Gedeon is a lifelong entrepreneur, born and raised in Hawai&#699;i, with over two decades of experience building businesses.</p>
 
-                                <p>He's an AAF Hawai&#699;i member since 2013.</p>
+                                    <p>He's an AAF Hawai&#699;i member since 2013.</p>
 
-                                <p>As CEO of JPG Media and JPG Hawai&#699;i, he leads a multi-million dollar company with exclusive advertising network spanning over 100 venues statewide, including The Kahala Hotel, &#699;Alohilani Resort, Windward Mall, Kailua Town, Times Supermarket, Don Quijote, Aloha Petroleum, and HELE locations.</p>
+                                    <p>As CEO of JPG Media and JPG Hawai&#699;i, he leads a multi-million dollar company with exclusive advertising network spanning over 100 venues statewide, including The Kahala Hotel, &#699;Alohilani Resort, Windward Mall, Kailua Town, Times Supermarket, Don Quijote, Aloha Petroleum, and HELE locations.</p>
 
-                                <p>JPG combines creative production, large&hyphen;format signage, digital screens, and vehicle advertising to help brands connect with communities and amplify their voice.</p>
+                                    <p>JPG combines creative production, large&hyphen;format signage, digital screens, and vehicle advertising to help brands connect with communities and amplify their voice.</p>
 
-                                <p>A creative at heart, he&apos;s a lyricist and rapper.</p>
+                                    <p>A creative at heart, he&apos;s a lyricist and rapper.</p>
 
-                                <p><a href="Jean-Paul.com">Jean-Paul.com</a> </p>
-                            </li>
-                        </ul>
+                                    <p><a href="Jean-Paul.com">Jean-Paul.com</a> </p>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                     <div class="one-third">
                         <img src="img/adPEOPLE-brandt.png" alt="brandt farias" width="930" height="1059">
@@ -330,17 +360,16 @@
                         <h3 class="caps">Brandt Farias</h3>
                         <h4>EVP &amp; Chief Marketing Officer</h4>
                         <h4><a href="https://winners.peleawards.com/agency/central-pacific-bank-rec0idAqQGlIJd8vz" target="_blank" rel="noopener noreferrer">Central Pacific Bank</a></h4>
-                        <ul class="accordian-list">
-                            <li class="accordian-item">
-                                <input type="checkbox" class="accordian-checkbox" checked>
-                                <h6 class="accordian-title">Read More</h6>
-                                <p class="accordian-description">Brandt Farias currently serves as Executive Vice President and Chief Marketing Officer at Central Pacific Bank, where he oversees all the Bank&apos;s marketing and communications programs, He joined the bank in 2021 as Senior Vice President and Marketing Director.</p>
-                                <p>Prior to coming to CPB, he served in key marketing roles at Hawaii Pacific Health and First Hawaiian Bank.</p>
-                                <p>He is a graduate of the University of Hawai&#699;i at M&#257;noa and serves on the boards of the Hawaii Chapter of the American Heart Association and the Hawai&#699;i Employers Council.</p>
-                            </li>
-                        </ul>
+                        <div class="pele-accordion">
+                            <details>
+                                <summary>Read More</summary>
+                                <div class="details-content">
+                                    <p class="accordian-description" Brandt Farias currently serves as Executive Vice President and Chief Marketing Officer at Central Pacific Bank, where he oversees all the Bank&apos;s marketing and communications programs, He joined the bank in 2021 as Senior Vice President and Marketing Director.</p>
+                                    <p>Prior to coming to CPB, he served in key marketing roles at Hawaii Pacific Health and First Hawaiian Bank.</p>
+                                    <p>He is a graduate of the University of Hawai&#699;i at M&#257;noa and serves on the boards of the Hawaii Chapter of the American Heart Association and the Hawai&#699;i Employers Council.</p>
+                            </details>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -354,7 +383,7 @@
                     <div class="one-half">
                         <h3 class="text-centered">AD People of the Year Winners</h3>
                     </div>
-                    <div class="one-fourth"><img src="img/megaphone-animated2.svg" alt="megaphone" class="img-hor">
+                    <div class="one-fourth"><img src="img/megaphone-animated2.svg" alt="megaphone" class="img-hor hide-mobile">
                     </div>
                 </div>
                 <div class="row">
@@ -471,7 +500,7 @@
                         <p>All College work entered in the 2026 Pele Awards Competition must have first appeared in media between January 1, 2026, and December 31, 2026.</p>
                         <p>Please see the 2026 Pele Information Guide for specific entry rules, guidelines, and categories.</p>
                         <div class="row">
-                            <div class="one-half"><a class="btn btn-primary nav-link p-sides" href="https://d13peleawards.github.io/2027-pele-awards-info-guide/" role="button">Download Entry Booklet</a></div>
+                            <div class="one-half"><a class="btn btn-primary nav-link p-sides" href="/infoguide.html" role="button">Download Entry Booklet</a></div>
                             <div class="one-half"><a class="btn btn-primary nav-link p-sides" href="https://enter.americanadvertisingawards.com/a/Organizations/13-HAW/Home" role="button">Enter Online Now</a></div>
                         </div>
 
@@ -492,7 +521,8 @@
                         <p>Mahalo to our sponsors &amp; community help.</p>
                     </div>
                 </div>
-                <img src="img/thanks.png" alt="thanks">
+                <img src="img/pele-sponsors.jpg" alt="thanks">
+                <img src="img/slippahs-animated.svg" alt="animated slippahs" width="200" height="200" class="tilt">
             </div>
         </section>
         <!-- Start of Footer Section -->
@@ -529,12 +559,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#winner">2026 Winners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://winners.peleawards.com/winners/2026">2026 Winners</a></li>
                         <li class="nav-item"><a class="nav-link" href="#judges">Judges</a></li>
                         <li class="nav-item"><a class="nav-link" href="#nominate">Nominate</a></li>
                         <li class="nav-item"><a class="nav-link" href="#adpeople">Ad People</a></li>
                         <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://d13peleawards.github.io/2027peleawards-highschool/">Highschool</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/2027-highschool.html">Highschool</a></li>
                         <li class="nav-item"><a class="btn btn-primary nav-link" href="https://enter.americanadvertisingawards.com/a/Organizations/13-HAW/Home" role="button">Enter</a></li>
 
                     </ul>
@@ -567,6 +597,8 @@
         <!-- REQUIRED: Javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+
     </body>
 
 </html>
