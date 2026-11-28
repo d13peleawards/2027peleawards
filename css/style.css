@@ -1004,3 +1004,7 @@ footer {
 .pele-accordion details *::selection {
     background-color: transparent;
 }
+
+strong {
+  font-weight: 900;
+}

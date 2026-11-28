@@ -922,3 +922,8 @@ h3.text-centered {
   -webkit-transform: rotateX(180deg) rotateY(180deg);
   transform: rotateX(180deg) rotateY(180deg);
   /* Rotate 180 degrees on both */ }
+
+
+strong {
+  font-weight: 900;
+}
